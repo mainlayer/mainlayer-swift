@@ -86,7 +86,7 @@ let client = Mainlayer(apiKey: "ml_live_...")
 // Custom base URL (e.g. staging)
 let client = Mainlayer(
     apiKey: "ml_test_...",
-    baseURL: URL(string: "https://staging.api.mainlayer.xyz")!,
+    baseURL: URL(string: "https://staging.api.mainlayer.fr")!,
     session: URLSession.shared
 )
 ```
@@ -280,7 +280,7 @@ let session = MockSession()
 session.stubbedData = vendorJSON
 let client = Mainlayer(
     apiKey: "ml_test_key",
-    baseURL: URL(string: "https://api.mainlayer.xyz")!,
+    baseURL: URL(string: "https://api.mainlayer.fr")!,
     session: session
 )
 let vendor = try await client.getVendor()
